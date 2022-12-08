@@ -1,10 +1,14 @@
-Write a function that computes the square value of all integers of a matrix.
+guillaume@ubuntu:~/0x04$ cat 1-main.py
+#!/usr/bin/python3
+search_replace = __import__('1-search_replace').search_replace
 
-Prototype: def square_matrix_simple(matrix=[]):
-matrix is a 2 dimensional array
-Returns a new matrix:
-Same size as matrix
-Each value should be the square of the value of the input
-Initial matrix should not be modified
-You are not allowed to import any module
-You are allowed to use regular loops, map, etc.
+my_list = [1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
+new_list = search_replace(my_list, 2, 89)
+
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/0x04$ ./1-main.py
+[1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]
+[1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]
+guillaume@ubuntu:~/0x04$ 
